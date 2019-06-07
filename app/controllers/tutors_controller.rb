@@ -6,6 +6,7 @@ class TutorsController < ApplicationController
   def create
     @tutor = Tutor.new(tutor_params)
     if @tutor.save
+      log_in_tutor @tutor
       flash[:success] = 'Successfully registered!'
       redirect_to @tutor
     else

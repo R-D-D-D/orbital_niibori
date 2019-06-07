@@ -1,0 +1,24 @@
+<% if yield(:type).eql?("tutor") %>
+  <%= form_for(:session, url: tutor_login_path) do |f| %>
+    <%= f.label :email %>
+    <%= f.email_field :email, class: 'form-control' %>
+
+    <%= f.label :password %>
+    <%= f.password_field :password, class: 'form-control' %>
+
+    <%= f.submit "Log in as tutor", class: "btn btn-primary" %>
+
+  <% end %>
+<% else %>
+  <%= form_for(:session, url: student_login_path) do |f| %>
+
+    <%= f.label :email %>
+    <%= f.email_field :email, class: 'form-control' %>
+
+    <%= f.label :password %>
+    <%= f.password_field :password, class: 'form-control' %>
+
+  <%= f.submit "Log in as student", class: "btn btn-primary" %>
+
+  <% end %>
+<% end %>

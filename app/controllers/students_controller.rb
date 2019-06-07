@@ -6,6 +6,7 @@ class StudentsController < ApplicationController
   def create
     @student = Student.new(student_params)
     if @student.save
+      log_in_student @student
       flash[:success] = 'Successfully registered!'
       redirect_to @student
     else
