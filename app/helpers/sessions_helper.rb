@@ -24,4 +24,12 @@ module SessionsHelper
     session.delete(:tutor_id)
     @current_user = nil
   end
+
+  def tutor?
+    if current_user.class == Tutor.first.class
+      return true
+    else
+      return false
+    end
+  end
 end

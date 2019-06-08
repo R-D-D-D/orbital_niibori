@@ -17,7 +17,14 @@ class SessionsController < ApplicationController
   end
 
   def create_tutor
-
+    @tutor = Tutor.find_by(email: params[:session][:email].downcase)
+    if @tutor && @tutor.authenticate(params[:session][:password])
+      log_in_tutor(@tutor)
+      redirect_to @tutor
+    else
+      flash.now[:danger] = 'Invalid email/password combination'
+      render 'new_tutor'
+    end
   end
 
   def destroy
