@@ -17,7 +17,7 @@ Tutor.create!(name:  "Runding",
 
 
 (1..40).each do |n|
-  name  = Faker::Name.name
+  name  = Faker::Name.name + " " + n.to_s
   email = "example-#{n}@gmail.org"
   password = "password"
   Tutor.create!(name:  name,
@@ -27,7 +27,7 @@ Tutor.create!(name:  "Runding",
 end
 
 (41..80).each do |n|
-  name  = Faker::Name.name
+  name  = Faker::Name.name + " " + n.to_s
   email = "example-#{n+41}@gmail.org"
   password = "password"
   Student.create!(name:  name,
@@ -43,4 +43,14 @@ tutors = Tutor.order(:created_at).take(6)
   tutors.each { |tutor|
     tutor.courses.create!(title: title, content: content)
   }
+end
+
+students = Student.all
+courses = Course.all
+student_ids = students[0..25]
+course_ids = courses[0..40]
+student_ids.each do |student|
+  course_ids.each do |course|
+    student.subscribe(course)
+  end
 end

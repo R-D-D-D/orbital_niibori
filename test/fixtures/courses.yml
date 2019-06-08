@@ -1,1 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+piano:
+  title: "Piano grade 5"
+  content: "Scale and advanced chords"
+  created_at: <%= 10.minutes.ago %>
+  tutor: runding

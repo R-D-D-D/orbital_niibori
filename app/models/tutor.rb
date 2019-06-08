@@ -1,5 +1,7 @@
 class Tutor < ApplicationRecord
   has_many :courses, dependent: :destroy
+  #has_many :subscriptions, dependent: :destroy
+  #has_many :students, through: :subscriptions, source: :student
   before_save { self.email = email.downcase }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   validates :email, presence:   true, length: { maximum: 255 },

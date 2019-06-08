@@ -27,6 +27,12 @@ class StudentsController < ApplicationController
   def destroy
   end
 
+  def courses
+    @title = "Enrolled courses"
+    @courses = Student.find_by(params[:id]).courses
+    render 'students/show_enrolled'
+  end
+
   private
 
   def student_params

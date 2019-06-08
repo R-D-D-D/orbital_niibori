@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_07_143110) do
+ActiveRecord::Schema.define(version: 2019_06_08_105607) do
 
   create_table "courses", force: :cascade do |t|
     t.string "title"
@@ -30,6 +30,16 @@ ActiveRecord::Schema.define(version: 2019_06_07_143110) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
     t.index ["email"], name: "index_students_on_email", unique: true
+  end
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.integer "student_id"
+    t.integer "course_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_subscriptions_on_course_id"
+    t.index ["student_id", "course_id"], name: "index_subscriptions_on_student_id_and_course_id", unique: true
+    t.index ["student_id"], name: "index_subscriptions_on_student_id"
   end
 
   create_table "tutors", force: :cascade do |t|

@@ -11,9 +11,18 @@ Rails.application.routes.draw do
   post '/tutor_signup', to: 'tutors#create'
   get '/student_signup', to: 'students#new'
   post '/student_signup', to: 'students#create'
-  resources :tutors
+  resources :tutors do
+    member do
+      get :students
+    end
+  end
   resources :courses
-  resources :students
+  resources :students do
+    member do
+      get :courses
+    end
+  end
+  resources :subscriptions,       only: [:create, :destroy]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

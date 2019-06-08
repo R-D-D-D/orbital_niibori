@@ -22,9 +22,21 @@ class TutorsController < ApplicationController
   end
 
   def update
+
   end
 
   def destroy
+  end
+
+  def students
+    @title = "Students under me"
+    @courses = Tutor.find_by(params[:id]).courses
+    @students = Array.new
+    @courses.each do |course|
+      course.students.uniq { |p| p.id}.each {|i| @students << i }
+    end
+    @students = @students.uniq { |p| p.id}
+    render 'tutors/show_students'
   end
 
   private

@@ -1,0 +1,4 @@
+<%= form_for(current_user.subscriptions.find_by(course_id: @course.id),
+             html: { method: :delete }) do |f| %>
+  <%= f.submit "Quit", class: "btn" %>
+<% end %>

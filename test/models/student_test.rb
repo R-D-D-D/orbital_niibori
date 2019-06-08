@@ -21,4 +21,14 @@ class StudentTest < ActiveSupport::TestCase
     @user.password = @user.password_confirmation = "a" * 5
     assert_not @user.valid?
   end
+
+  test "should subscribe and unsubscribe a course" do
+    student = students(:michael)
+    course  = courses(:piano)
+    assert_not student.subscribing?(course)
+    student.subscribe(course)
+    assert student.subscribing?(course)
+    student.unsubscribe(course)
+    assert_not student.subscribing?(course)
+  end
 end

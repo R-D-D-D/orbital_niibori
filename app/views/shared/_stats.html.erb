@@ -1,0 +1,12 @@
+<% if tutor? %>
+<% else %>
+  <% @user ||= current_user %>
+  <div class="stats">
+    <a href="<%= courses_student_path(@user) %>">
+      <strong id="following" class="stat">
+        <%= @user.courses.count %>
+      </strong>
+      subscribed
+    </a>
+</div>
+<% end %>
