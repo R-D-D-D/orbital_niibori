@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'videos/index'
+  get 'videos/new'
+  get 'videos/create'
   get    '/student_login',   to: 'sessions#new_student'
   post   '/student_login',   to: 'sessions#create_student'
   delete '/logout',  to: 'sessions#destroy'
@@ -23,6 +26,7 @@ Rails.application.routes.draw do
     end
   end
   resources :subscriptions,       only: [:create, :destroy]
+  resources :videos, only: [:index, :new, :create, :destroy]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
