@@ -51,7 +51,7 @@
   <%= render 'courses/collection', heading: 'Courses to Get You Started', courses: @courses_beginners %>
 <% end %>
 
-<% if student? && @courses_recommend.any? %>
+<% if student? && !@courses_recommend.nil? %>
   <%= render 'courses/collection', heading: 'Recommended Courses for You', courses: @courses_recommend %>
 <% end %>
 
