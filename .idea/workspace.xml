@@ -50,39 +50,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/courses.html.erb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/courses/_show_course.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="824">
-              <caret line="123" selection-start-line="123" selection-start-column="4" selection-end-line="126" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/lessons/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/courses/_show_lesson.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="34" column="171" selection-start-line="34" selection-start-column="171" selection-end-line="34" selection-end-column="171" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-422">
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
+            <state relative-caret-position="367">
+              <caret line="34" column="205" selection-start-line="34" selection-start-column="205" selection-end-line="34" selection-end-column="205" />
+              <folding>
+                <element signature="n#style#0;n#video#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -505,7 +480,7 @@
       <workItem from="1589216597676" duration="1094000" />
       <workItem from="1589251882572" duration="414000" />
       <workItem from="1589265535490" duration="49000" />
-      <workItem from="1592547823339" duration="799000" />
+      <workItem from="1592547823339" duration="1006000" />
     </task>
     <servers />
   </component>
@@ -515,7 +490,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181807000" />
+    <option name="totallyTimeSpent" value="182014000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -811,8 +786,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/courses/_show_lesson.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="34" column="171" selection-start-line="34" selection-start-column="171" selection-end-line="34" selection-end-column="171" />
+        <state relative-caret-position="367">
+          <caret line="34" column="205" selection-start-line="34" selection-start-column="205" selection-end-line="34" selection-end-column="205" />
+          <folding>
+            <element signature="n#style#0;n#video#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
