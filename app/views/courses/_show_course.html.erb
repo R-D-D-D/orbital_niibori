@@ -70,18 +70,19 @@
       </h2>
 
       <% if @course.target.present? %>
-        <h3 class="target-heading text-left"><b>Who is this course for?</b><h3>
+        <h3 class="target-heading text-left"><b>Who is this course for?</b></h3>
             <h2 class="target mt-2 text-left">
               <%= @course.target %>
             </h2>
+        </h3>
           <% end %>
 
-          <% if @course.prerequisites.present? %>
-            <h3 class="prerequisites-heading text-left"><b>Prerequisites for this Course</b><h3>
-                <h2 class="prerequisites mt-2 text-left">
-                  <%= @course.prerequisites %>
-                </h2>
-              <% end %>
+      <% if @course.prerequisites.present? %>
+        <h3 class="prerequisites-heading text-left"><b>Prerequisites for this Course</b></h3>
+          <h2 class="prerequisites mt-2 text-left">
+            <%= @course.prerequisites %>
+          </h2>
+      <% end %>
 
     </div>
   </div>
@@ -120,10 +121,10 @@
         <div class="tutor-stats col-2">
           <%= link_to gravatar_for(@tutor, size: 80), @tutor, class: 'tutor-gravatar' %>
 
-          <span class="tutor-rating text-left">
-            <%= image_tag "tutor-rating.png" %>
-            <strong><%= @tutor.rating %></strong> tutor rating
-          </span>
+<!--          <span class="tutor-rating text-left">-->
+            <%#= image_tag "tutor-rating.png" %>
+<!--            <strong><%#= @tutor.rating %></strong> tutor rating-->
+<!--          </span>-->
 
           <span class="tutor-students text-left">
             <%= image_tag "tutor-students.png" %>
