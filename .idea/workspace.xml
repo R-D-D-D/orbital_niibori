@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e748ffa8-bd59-4dc5-8a24-3ad9883a814c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/courses/_show_course.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/courses/_show_course.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/courses/_show_lesson.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/courses/_show_lesson.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -56,11 +55,25 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/courses/_show_course.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="824">
               <caret line="123" selection-start-line="123" selection-start-column="4" selection-end-line="126" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/lessons/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/courses/_show_lesson.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="34" column="171" selection-start-line="34" selection-start-column="171" selection-end-line="34" selection-end-column="171" />
             </state>
           </provider>
         </entry>
@@ -172,7 +185,6 @@
         <option value="$PROJECT_DIR$/app/views/courses/_course.html.erb" />
         <option value="$PROJECT_DIR$/app/views/courses/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/courses/_show_lesson.html.erb" />
         <option value="$PROJECT_DIR$/config/master.key" />
         <option value="$PROJECT_DIR$/app/controllers/tutors_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/_post.html.erb" />
@@ -181,6 +193,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/courses/_show_course.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/courses/_show_lesson.html.erb" />
       </list>
     </option>
   </component>
@@ -228,7 +241,21 @@
               <item name="orbital_niibori" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="orbital_niibori" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orbital_niibori" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="orbital_niibori" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orbital_niibori" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="lessons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="orbital_niibori" type="b2602c69:ProjectViewProjectNode" />
@@ -478,7 +505,7 @@
       <workItem from="1589216597676" duration="1094000" />
       <workItem from="1589251882572" duration="414000" />
       <workItem from="1589265535490" duration="49000" />
-      <workItem from="1592547823339" duration="506000" />
+      <workItem from="1592547823339" duration="799000" />
     </task>
     <servers />
   </component>
@@ -488,7 +515,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181514000" />
+    <option name="totallyTimeSpent" value="181807000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -532,16 +559,6 @@
     <SUITE FILE_PATH="coverage/Niibori@test_login_with_remembering__Niibori.rcov" NAME="test_login_with_remembering: Niibori Coverage Results" MODIFIED="1560700476295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Niibori" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/student.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/students_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -784,8 +801,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/courses/_show_course.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="824">
           <caret line="123" selection-start-line="123" selection-start-column="4" selection-end-line="126" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/lessons/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/courses/_show_lesson.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="34" column="171" selection-start-line="34" selection-start-column="171" selection-end-line="34" selection-end-column="171" />
         </state>
       </provider>
     </entry>
